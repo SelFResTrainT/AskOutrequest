@@ -142,8 +142,10 @@
     // Attempt to unmute after autoplay starts
     audioElement.addEventListener('play', () => {
       audioElement.muted = false;
-      document.querySelector('.js-ask-out').innerHTML = '' ;
+
     });
+     audioElement.play();
+           
   </script>
 
   <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
